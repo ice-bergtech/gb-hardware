@@ -14,3 +14,4 @@ _autosave-*
 *.csv
 fp-info-cache
 *.kicad_prl
+external

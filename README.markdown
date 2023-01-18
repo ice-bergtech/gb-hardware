@@ -51,6 +51,20 @@ Breakout Game Boy cartridge.
 
 ![GB-BRK-CART v4.0 KiCad 3D view](GB-BRK-CART.3d.png)
 
+## GB-BRK-CART-PASS
+
+Based on `GB-BRK-CART`.
+Allows you to "snoop" on the read and writes the Gameboy is performing on the cartridge.
+
+* PCB size: 51.4x61mm
+* PCB thickness: 1.0mm
+* Layer count: 2
+* Surface finish: ENIG (absolutely *do not* choose HASL)
+
+![GB-BRK-CART-PASS v1.0](GB-BRK-CART-PASS-v1.0.jpg)
+
+![GB-BRK-CART-PASS v1.0 KiCad 3D view](GB-BRK-CART-PASS.3d.png)
+
 ## GB-BRK-LINK-A
 
 Breakout board for original Game Boy (DMG) link port.
@@ -213,3 +227,30 @@ parts (big and easy to solder).
 * Surface finish: any
 
 ![GB-CARTPP-DIY v1.1 KiCad 3D view](GB-CARTPP-DIY.3d.png)
+
+## Notes
+
+### Exporting
+
+For printing the PCBs I've been using JLPCB.
+
+[Gerber Export guide KiCad 5.1](https://jlcpcb.com/help/article/10-How-to-generate-Gerber-and-Drill-files-in-KiCad-5)
+
+When creating a gerber zip, be sure the clear out any old files from previous builds.
+This usually happens when files are renamed, and can result in extra files that screw up the printing.
+
+---
+
+They also provide component placement services, just requiring you to export a few extra files.
+
+Generating BOM (Bill of Materials) and CPL (Component Placement List) https://support.jlcpcb.com/article/84-how-to-generate-the-bom-and-centroid-file-from-kicad
+
+Kicad plugins for formatting BOM and CPL: https://github.com/wokwi/kicad-jlcpcb-bom-plugin
+
+Steps:
+
+1.  Open pcb project file in kicad (5.x)
+2.  Open schematic
+3.  File -> Fabrication Outputs -> BOM
+4.  Open PCB viewer
+5.  File -> Fabrication Outputs -> Component Placement
