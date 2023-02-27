@@ -1,0 +1,5 @@
+[user]
+	name = Iceberg
+	email = dev@icebergtech.xyz
+[core]
+	sshCommand = ssh -i ~/.ssh/icetech_ed25519 -F /dev/null
