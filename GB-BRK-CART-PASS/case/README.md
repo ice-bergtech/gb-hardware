@@ -3,6 +3,8 @@
 This folder contains the files used to 3d print the case for the breakout/passthrough cart.
 It consists of the bottom, with a normal GB cart footprint and the top, which is shorter to allow clearence for the breakout pins.
 
+![Case on the slicer](case_models.png)
+
 Modified from original: https://github.com/Chelsea486MHz/gbcase
 
 ## gbcase
